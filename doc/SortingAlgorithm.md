@@ -102,7 +102,18 @@ If r > l
              Call merge(arr, l, m, r)
 ```
 
-想象一下，每次从 A 和 B 两个数组取一个首部元素，比较之后再放入 C 数组，这就是合并的过程。
+想象一下，每次从 A 和 B 两个数组取一个首部元素，比较之后再放入 C 数组，这就是合并的过程。   
+
+参考《Introduction to Algorithms》CH3.1：  
+Merge Sort 是典型的“the Divide and Conquer Algorithm”，它一般分为三步：分解、解决（子问题）、合并。它的递归式如下：
+
+```math
+T(n) = \left\{\begin{matrix}
+\Theta(1) & n \leq c\\ 
+ aT(n/b) + D(n) + C(n)& other
+\end{matrix}\right.
+```
+
 
 ### Quick_Sort
 
